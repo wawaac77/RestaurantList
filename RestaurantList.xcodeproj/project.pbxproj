@@ -14,6 +14,9 @@
 		00BC3A9622FE6D370027EAA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BC3A9422FE6D370027EAA6 /* LaunchScreen.storyboard */; };
 		00BC3AA122FE6D370027EAA6 /* RestaurantListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BC3AA022FE6D370027EAA6 /* RestaurantListTests.swift */; };
 		00BC3AAC22FE6D370027EAA6 /* RestaurantListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BC3AAB22FE6D370027EAA6 /* RestaurantListUITests.swift */; };
+		00BC3AC022FE71560027EAA6 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BC3ABE22FE71560027EAA6 /* RestaurantCell.swift */; };
+		00BC3AC122FE71560027EAA6 /* RestaurantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00BC3ABF22FE71560027EAA6 /* RestaurantCell.xib */; };
+		00BC3AC422FE7AFA0027EAA6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BC3AC322FE7AFA0027EAA6 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		00BC3AA722FE6D370027EAA6 /* RestaurantListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BC3AAB22FE6D370027EAA6 /* RestaurantListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListUITests.swift; sourceTree = "<group>"; };
 		00BC3AAD22FE6D370027EAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00BC3ABE22FE71560027EAA6 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		00BC3ABF22FE71560027EAA6 /* RestaurantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantCell.xib; sourceTree = "<group>"; };
+		00BC3AC322FE7AFA0027EAA6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,10 @@
 		00BC3A8A22FE6D360027EAA6 /* RestaurantList */ = {
 			isa = PBXGroup;
 			children = (
+				00BC3AC522FE85250027EAA6 /* Controller */,
+				00BC3AC222FE7ADF0027EAA6 /* Model */,
+				00BC3AB922FE6FB40027EAA6 /* View */,
 				00BC3A8B22FE6D360027EAA6 /* AppDelegate.swift */,
-				00BC3A8D22FE6D360027EAA6 /* ViewController.swift */,
 				00BC3A8F22FE6D360027EAA6 /* Main.storyboard */,
 				00BC3A9222FE6D370027EAA6 /* Assets.xcassets */,
 				00BC3A9422FE6D370027EAA6 /* LaunchScreen.storyboard */,
@@ -123,6 +131,31 @@
 				00BC3AAD22FE6D370027EAA6 /* Info.plist */,
 			);
 			path = RestaurantListUITests;
+			sourceTree = "<group>";
+		};
+		00BC3AB922FE6FB40027EAA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00BC3ABE22FE71560027EAA6 /* RestaurantCell.swift */,
+				00BC3ABF22FE71560027EAA6 /* RestaurantCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00BC3AC222FE7ADF0027EAA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00BC3AC322FE7AFA0027EAA6 /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00BC3AC522FE85250027EAA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00BC3A8D22FE6D360027EAA6 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BC3AC122FE71560027EAA6 /* RestaurantCell.xib in Resources */,
 				00BC3A9622FE6D370027EAA6 /* LaunchScreen.storyboard in Resources */,
 				00BC3A9322FE6D370027EAA6 /* Assets.xcassets in Resources */,
 				00BC3A9122FE6D360027EAA6 /* Main.storyboard in Resources */,
@@ -256,7 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BC3AC022FE71560027EAA6 /* RestaurantCell.swift in Sources */,
 				00BC3A8E22FE6D360027EAA6 /* ViewController.swift in Sources */,
+				00BC3AC422FE7AFA0027EAA6 /* Restaurant.swift in Sources */,
 				00BC3A8C22FE6D360027EAA6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
